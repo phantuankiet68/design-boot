@@ -185,7 +185,7 @@ tbody, td, tfoot, th, thead, tr {
     border-color: #e4ebf3 !important;
 }
 .table-hover>tbody>tr:hover {
-    --bs-table-accent-bg: rgb(255 141 126 / 41%) !important;
+    --bs-table-accent-bg: rgb(30 204 243 / 41%) !important;
     color: #ffffff !important;
     border: none;
     cursor: pointer;
@@ -221,200 +221,7 @@ td .btn.btn-outline-secondary{
     clip-path: polygon(49% 8%, 62% 49%, 48% 89%, 0 100%, 0 0);
     z-index: 2;
 }
-.nav-design-box1:before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 0;
-    height: 91%;
-    width: 90px;
-    background-color: #e3e3e3 !important;
-    clip-path: polygon(49% 8%, 62% 49%, 48% 89%, 0 100%, 0 0);
-    z-index: 1;
-    pointer-events: none;
-}
 
-.nav-design-box2{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 100px;
-    background: #fff;
-    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
-    animation: gradientMove 6s ease infinite; 
-    clip-path: polygon(49% 8%, 38% 48%, 48% 89%, 100% 100%, 100% 0);
-    z-index: 2;
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-.nav-design-box2:before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    right: 0;
-    height: 91%;
-    width: 90px;
-    background-color: #e3e3e3 !important;
-    clip-path: polygon(49% 8%, 38% 48%, 48% 89%, 100% 100%, 100% 0);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.nav-design-box3 {
-    position: absolute;
-    right: 36%;
-    top: 0;
-    height: 28%;
-    width: 364px;
-    background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    clip-path: polygon(50% 0%, 100% 0, 97% 65%, 3% 65%, 0 0);
-    z-index: 1;
-}
-
-
-.nav-design-box3:before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    right: 4px;
-    height: 92%;
-    width: 98%;
-    background-color: #cad4dc !important;
-    clip-path: polygon(50% 0%, 100% 0, 97% 65%, 3% 65%, 0 0);
-    z-index: 1;
-    pointer-events: none;
-}
-
-
-.nav-design-box4 {
-    position: absolute;
-    right: 7px;
-    left: 7px;
-    bottom: 8px;
-    height: 5px;
-    width: 99%;
-     background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    z-index: 1;
-}
-
-.nav-design-box5{
-    position: absolute;
-    left: 0;
-    top: -1px;
-    height: 100%;
-    width: 30%;
-     background: #fff;
-    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
-    animation: gradientMove 6s ease infinite; 
-    clip-path: polygon(50% 0%, 100% 0, 97% 22%, 0 23%, 0 0);
-    z-index: 1;
-}
-.nav-design-box5:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 82%;
-    width: 98.7%;
-    background-color: #cad4dc !important;
-    clip-path: polygon(50% 0%, 100% 0, 97% 22%, 0 23%, 0 0);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.nav-design-box6{
-    position: absolute;
-    right: 0;
-    top: -1px;
-    height: 100%;
-    width: 30%;
-     background: #fff;
-    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
-    animation: gradientMove 6s ease infinite; 
-    clip-path: polygon(50% 0%, 100% 0, 100% 22%, 3% 22%, 0 0);
-    z-index: 1;
-}
-.nav-design-box6:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 74%;
-    width: 98.7%;
-    background-color: #cad4dc !important;
-    clip-path: polygon(50% 0%, 100% 0, 100% 22%, 3% 22%, 0 0);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.nav-design-box7 {
-    position: absolute;
-    bottom: 9px;
-    left: 35.4%;
-    height: 4px;
-    width: 58px;
-    background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    transform: rotate(-67deg);
-    transform-origin: left;
-}
-
-.nav-design-box8 {
-    position: absolute;
-    top: 9px;
-    right: 32.6%;
-    height: 4px;
-    width: 56px;
-    background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    transform: rotate(65deg);
-    transform-origin: left;
-}
-
-.nav-design-box9 {
-    position: absolute;
-    top: 9px;
-    left: 28.8%;
-    height: 4px;
-    width: 56px;
-     background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    transform: rotate(65deg);
-    transform-origin: left;
-}
-
-.nav-design-box10 {
-    position: absolute;
-    bottom: 9px;
-    right: 26.5%;
-    height: 4px;
-    width: 52px;
-     background: #fff;
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    transform: rotate(-68deg);
-    transform-origin: left;
-}
 
 .nav-pills .nav-link.active{
     color: #fff !important;
@@ -500,14 +307,16 @@ td .btn.btn-outline-secondary{
     background-color: #fff;
 }
 
-.nav-design-top{
+.nav-design-top {
     position: absolute;
     width: 2px;
-    height: 30%;
+    height: 100%;
     top: 0px;
     left: 20px;
-    background-color: #fff;
+    background: #fff; /* Màu nền chính */
+    overflow: hidden; /* Để đảm bảo phần tử con không vượt ra ngoài */
 }
+
 .nav-design-content{
     position: absolute;
     width: 2px;
@@ -525,6 +334,102 @@ td .btn.btn-outline-secondary{
     left: 20px;
     background-color: #fff;
 }
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.design-sidebar-em {
+    position: absolute;
+    width: 74px;
+    height: 41.5%;
+    top: 22%;
+    left: 0;
+    clip-path: polygon(0 0, 72% 22%, 73% 83%, 0% 100%);
+    background-color: #fff;
+    z-index: 2;
+}
+
+.design-sidebar-em:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 98.9%;
+    width: 97.7%;
+    background-color: #ccc !important;
+    clip-path: polygon(0 0, 72% 22%, 73% 83%, 0% 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.design-sidebar-em1 {
+    position: absolute;
+    width: 51px;
+    height: 25.5%;
+    top: 31%;
+    left: 0;
+    clip-path: polygon(0 0, 72% 22%, 73% 83%, 0% 100%);
+    background-color: #fff;
+    z-index: 3;
+}
+
+
+
+.design-sidebar-em1:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 98.5%;
+    width: 95.7%;
+    background-color: #ccc !important;
+    clip-path: polygon(0 0, 72% 22%, 73% 83%, 0% 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.design-sidebar-em2{
+    position: absolute;
+    width: 51px;
+    height: 25.5%;
+    top: 31%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 50%, 0 99%, 0 100%, 0 46%, 0% 0%);
+    background-color: #fff;
+    z-index: 2;
+}
+
+
+
+@media screen and (max-width: 1504px) {
+    .nav-design-top-1 {
+        top: 14.7%;
+    }
+    .nav-design-top-2 {
+        top: 20%;
+        height: 2px;
+    }
+    .nav-design-top-3 {
+        top: 26%;
+    }
+    .nav-design-bottom-3 {
+        bottom: 39%;
+    }
+    .nav-design-bottom-2 {
+        bottom: 33.5%;
+    }
+    .nav-design-bottom-1 {
+        bottom: 28%;
+    }
+}
 
 .sidebar {
     width: 300px;
@@ -535,14 +440,13 @@ td .btn.btn-outline-secondary{
     align-items: center;
     padding-top: 20px;
     box-sizing: border-box;
-    border-right: 2px solid #fff;
     position: relative;
 }
 
 .sidebar .dashboard {
     width: 200px;
     height: 50px;
-    background-color: #bbb;
+    background-color: #2ad1ff;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -552,6 +456,21 @@ td .btn.btn-outline-secondary{
     color: #fff;
     border-radius: 5px;
     border: 2px solid #fff;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+    border: 3px solid #ffc8a9 !important;
+}
+.filter-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.filter-container .form-control {
+    border-radius: 5px;
+}
+.filter-container .btn {
+    border-radius: 5px;
 }
 .line.horizontal {
 position: absolute;
@@ -633,16 +552,25 @@ background-color: white;
 .sidebar .navbar .navbar-nav .nav-link.active i {
     background: #ffa3a4 !important;
 }
+.table>thead {
+    vertical-align: bottom;
+    background: rgb(30 204 243 / 41%) !important;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+}
+.striped-table tr:nth-child(odd) {
+    background-color: #e7f7ff !important;
+}
 
-.sidebar .navbar .dropdown-toggle::after {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    transition: .5s;
+.striped-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.table-bordered>:not(caption)>*>* {
+    border-width: 0 1px;
+    font-size: 14px;
 }
 
 .sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
@@ -684,14 +612,6 @@ background-color: white;
     box-shadow: rgb(173 237 245 / 10%) 0px 0px 5px 0px, rgb(0 195 240 / 10%) 0px 0px 1px 0px;
 }
 
-.content .navbar .dropdown-toggle::after {
-    vertical-align: middle;
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    transition: .5s;
-}
 
 .navbar-expand .navbar-nav .dropdown-menu{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
