@@ -79,8 +79,8 @@
     z-index: 999;
 }
 
+
 .content {
-    margin-left: 220px;
     min-height: 100vh;
     background: #e3e3e3 !important;
     transition: 0.5s;
@@ -177,6 +177,418 @@ h6 {
 
 
 /*** Navbar ***/
+.nav-link {
+    padding: .5rem 0.9rem !important;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: #e4ebf3 !important;
+}
+.table-hover>tbody>tr:hover {
+    --bs-table-accent-bg: rgb(255 141 126 / 41%) !important;
+    color: #ffffff !important;
+    border: none;
+    cursor: pointer;
+}
+
+td .btn.btn-outline-secondary{
+    border: 1px solid #ffd9a4 !important;
+}
+
+.nav-design{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 5px solid #fff;
+    border-image-slice: 1;
+    animation: borderMove 4s linear infinite;
+}
+
+.bg-grey-t {
+    background-color: #a9a9a9 !important;
+}
+
+
+.nav-design-box1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    background: #fff;
+    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
+    animation: gradientMove 6s ease infinite; 
+    clip-path: polygon(49% 8%, 62% 49%, 48% 89%, 0 100%, 0 0);
+    z-index: 2;
+}
+.nav-design-box1:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 91%;
+    width: 90px;
+    background-color: #e3e3e3 !important;
+    clip-path: polygon(49% 8%, 62% 49%, 48% 89%, 0 100%, 0 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav-design-box2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    background: #fff;
+    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
+    animation: gradientMove 6s ease infinite; 
+    clip-path: polygon(49% 8%, 38% 48%, 48% 89%, 100% 100%, 100% 0);
+    z-index: 2;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.nav-design-box2:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    height: 91%;
+    width: 90px;
+    background-color: #e3e3e3 !important;
+    clip-path: polygon(49% 8%, 38% 48%, 48% 89%, 100% 100%, 100% 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav-design-box3 {
+    position: absolute;
+    right: 36%;
+    top: 0;
+    height: 28%;
+    width: 364px;
+    background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    clip-path: polygon(50% 0%, 100% 0, 97% 65%, 3% 65%, 0 0);
+    z-index: 1;
+}
+
+
+.nav-design-box3:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 4px;
+    height: 92%;
+    width: 98%;
+    background-color: #cad4dc !important;
+    clip-path: polygon(50% 0%, 100% 0, 97% 65%, 3% 65%, 0 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.nav-design-box4 {
+    position: absolute;
+    right: 7px;
+    left: 7px;
+    bottom: 8px;
+    height: 5px;
+    width: 99%;
+     background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    z-index: 1;
+}
+
+.nav-design-box5{
+    position: absolute;
+    left: 0;
+    top: -1px;
+    height: 100%;
+    width: 30%;
+     background: #fff;
+    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
+    animation: gradientMove 6s ease infinite; 
+    clip-path: polygon(50% 0%, 100% 0, 97% 22%, 0 23%, 0 0);
+    z-index: 1;
+}
+.nav-design-box5:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82%;
+    width: 98.7%;
+    background-color: #cad4dc !important;
+    clip-path: polygon(50% 0%, 100% 0, 97% 22%, 0 23%, 0 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav-design-box6{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    height: 100%;
+    width: 30%;
+     background: #fff;
+    background-size: 400% 400%; /* Kích thước gradient để tạo hiệu ứng mượt mà */
+    animation: gradientMove 6s ease infinite; 
+    clip-path: polygon(50% 0%, 100% 0, 100% 22%, 3% 22%, 0 0);
+    z-index: 1;
+}
+.nav-design-box6:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 74%;
+    width: 98.7%;
+    background-color: #cad4dc !important;
+    clip-path: polygon(50% 0%, 100% 0, 100% 22%, 3% 22%, 0 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.nav-design-box7 {
+    position: absolute;
+    bottom: 9px;
+    left: 35.4%;
+    height: 4px;
+    width: 58px;
+    background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    transform: rotate(-67deg);
+    transform-origin: left;
+}
+
+.nav-design-box8 {
+    position: absolute;
+    top: 9px;
+    right: 32.6%;
+    height: 4px;
+    width: 56px;
+    background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    transform: rotate(65deg);
+    transform-origin: left;
+}
+
+.nav-design-box9 {
+    position: absolute;
+    top: 9px;
+    left: 28.8%;
+    height: 4px;
+    width: 56px;
+     background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    transform: rotate(65deg);
+    transform-origin: left;
+}
+
+.nav-design-box10 {
+    position: absolute;
+    bottom: 9px;
+    right: 26.5%;
+    height: 4px;
+    width: 52px;
+     background: #fff;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+    transform: rotate(-68deg);
+    transform-origin: left;
+}
+
+.nav-pills .nav-link.active{
+    color: #fff !important;
+    background-color: rgb(255 118 85 / 57%) !important;
+}
+
+.nav-pills .nav-link {
+    color: #898989 !important;
+}
+
+.line {
+    margin-left: 20px;
+    position: absolute;
+    width: 2px;
+    background-color: white;
+}
+
+.vertical {
+    height: 40px;
+}
+.diagonal {
+    height: 24px;
+    transform-origin: top left;
+    
+}
+.diagonal:nth-child(1){
+    left: 21px !important;
+    top: 445px !important;
+}
+
+.nav-design-top-1 {
+    position: absolute;
+    left: 0;
+    top: 17%;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.nav-design-top-2 {
+    position: absolute;
+    left: 0;
+    top: 24%;
+    width: 22px;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+.nav-design-top-3 {
+    position: absolute;
+    left: 0;
+    top: 31%;
+    width: 22px;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+
+.nav-design-bottom-1 {
+    position: absolute;
+    left: 0;
+    bottom: 14%;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.nav-design-bottom-2 {
+    position: absolute;
+    left: 0;
+    bottom: 21%;
+    width: 22px;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+.nav-design-bottom-3 {
+    position: absolute;
+    left: 0;
+    bottom: 28%;
+    width: 22px;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+.nav-design-top{
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    top: 0px;
+    left: 20px;
+    background-color: #fff;
+}
+.nav-design-content{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    right: 20px;
+    background-color: #fff;
+}
+
+.nav-design-bottom{
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    bottom: 0px;
+    left: 20px;
+    background-color: #fff;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #fff;
+    position: relative;
+}
+
+.sidebar .dashboard {
+    width: 200px;
+    height: 50px;
+    background-color: #bbb;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+.line.horizontal {
+position: absolute;
+height: 2px;
+background-color: white;
+}
+.sidebar .menu-item {
+    width: 200px;
+    height: 40px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #bbb;
+    color: #fff;
+}
+
+
+.sidebar .menu-item.indented {
+    width: 180px;
+    margin-left: 20px; 
+}
+
+.sidebar .divider {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0;
+}
 
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
